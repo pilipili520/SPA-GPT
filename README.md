@@ -44,15 +44,11 @@ Explanation for each group:
 
 `traces`: It stores trace data. In this example, `CARD_RSA_for_paper` contains trace used in the paper, while `CARD_RSA_original contains` original traces collected using an oscilloscope.
 
-②**.py**📃 file is a Python example program for reading .h5 files.
+**②readH5.py**📃 is a Python example program for reading .h5 files.
 
-③**.m**📃 file is a MATLAB example program for reading .h5 files.
+**③readH5.m**📃 is a MATLAB example program for reading .h5 files.
 
-
-
-**Folders📁 Explanation:**
-
-`HDFView`: Visualize and read .h5 files with a Jar application. The version provided here is for Windows; simply double-click the .bat script file to open it. For Linux and other versions, as well as additional usage instructions, please visit [https://www.hdfgroup.org](https://www.hdfgroup.org/).
+**④HDFView.7z** 📃 is a desktop application for visualizing .h5 file. The version provided here is for Windows; simply double-click the .bat script file to open it. For Linux and other versions, as well as additional usage instructions, please visit [https://www.hdfgroup.org](https://www.hdfgroup.org/).
 
 
 
