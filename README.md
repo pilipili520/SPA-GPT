@@ -44,15 +44,11 @@ Explanation for each group:
 
 `traces`: It stores trace data. In this example, `CARD_RSA_for_paper` contains trace used in the paper, while `CARD_RSA_original contains` original traces collected using an oscilloscope.
 
-②**.py**📃 file is a Python example program for reading .h5 files.
+**②readH5.py**📃 is a Python example program for reading .h5 files.
 
-③**.m**📃 file is a MATLAB example program for reading .h5 files.
+**③readH5.m**📃 is a MATLAB example program for reading .h5 files.
 
-
-
-**Folders📁 Explanation:**
-
-`HDFView`: Visualize and read .h5 files with a Jar application. The version provided here is for Windows; simply double-click the .bat script file to open it. For Linux and other versions, as well as additional usage instructions, please visit [https://www.hdfgroup.org](https://www.hdfgroup.org/).
+**④HDFView.7z** 📃 is a desktop application for visualizing .h5 file. The version provided here is for Windows; simply double-click the .bat script file to open it. For Linux and other versions, as well as additional usage instructions, please visit [https://www.hdfgroup.org](https://www.hdfgroup.org/).
 
 
 
@@ -63,14 +59,16 @@ The table below illustrates the **processing** applied to the traces used **in o
 > 📌NOTE📌: The processing methods in the table apply only to the **_for_paper.h5 data.
 
 We use the following formula for low-pass filtering. The meaning of the parameter "low-pass filtered" is 𝑤, and 𝑆𝑖 Indicates the value of the 𝑖th point in the trace.
+
 $$
 s_i=\frac{w * s_{i-1}+s_i}{1+w}
 $$
 
+
 | ID   |  Algorithm trace   |                          Truncating                          | Preprocessing                                                | Sample rate |
 | ---- | :----------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | :---------: |
 | 1    |   smart_card_RSA   | Originally 1562 operations (with an additional multiplication operation at the end), now 1561 operations,  truncated the first segment. | Resampled at 1000000Hz and low-pass filtered at 10           |   12.5M/s   |
-| 2    |     ASICX_RSA      | Originally 1536 operations, now 1535, truncated the first three, but only reduce one operation. | Resampled at 5000000Hz, low-pass filtered at 10 and Averaged every 10 waveforms into one. |    25M/s    |
+| 2    |     ASICX_RSA      | Originally 1536 operations, now 1535, truncated the first three, but only reduce one operation. | Resampled at 5000000Hz, low-pass filtered at 10 and Averaged every 10 traces into one. |    25M/s    |
 | 3    |  FPGA_noDelay_RSA  | Originally 1531 operations, now 1529, truncated the first three | low-pass filtered at 10                                      |    25M/s    |
 | 4    | FPGA_withDelay_RSA | Originally 1531 operations, now 1529, truncated the first three | low-pass filtered at 10                                      |    25M/s    |
 | 5    |      F429_RSA      | Originally 1535 operations, now 1533, truncated the first two | Resampled at 1000000Hz and low-pass filtered at 5, moving average 100 |    25M/s    |
