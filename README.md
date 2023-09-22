@@ -59,9 +59,11 @@ The table below illustrates the **processing** applied to the traces used **in o
 > 📌NOTE📌: The processing methods in the table apply only to the **_for_paper.h5 data.
 
 We use the following formula for low-pass filtering. The meaning of the parameter "low-pass filtered" is 𝑤, and 𝑆𝑖 Indicates the value of the 𝑖th point in the trace.
+
 $$
 s_i=\frac{w * s_{i-1}+s_i}{1+w}
 $$
+
 
 | ID   |  Algorithm trace   |                          Truncating                          | Preprocessing                                                | Sample rate |
 | ---- | :----------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | :---------: |
