@@ -16,7 +16,7 @@ one implementations of ECC.
 | files                | Algorithm | Implementation | Device     | Trace numbers | Download                                                     |
 | -------------------- | --------- | -------------- | ---------- | ------------- | ------------------------------------------------------------ |
 | 1-smart_card_RSA.h5  | RSA       | co-design      | smart card | 10            | [link](https://drive.google.com/file/d/1OsDaXpcQ7VVsuLL5z4eAcujq6uANXbRA/view?usp=sharing) |
-| 2-ASICX_RSA.h5       | RSA       | unknown        | ASIC X     | 100           | [link](https://drive.google.com/file/d/1pnWINMGel-jt2wvAbLAFCNGB68N9Eq3L/view?usp=drive_link) |
+| 2-ASICX_RSA.h5       | RSA       | hardware        | ASIC X     | 100           | [link](https://drive.google.com/file/d/1pnWINMGel-jt2wvAbLAFCNGB68N9Eq3L/view?usp=drive_link) |
 | 3-FPGA_noDelay_RSA   | RSA       | hardware       | SAKURA-G   | 1             | [link](https://drive.google.com/file/d/10b3yC6SVrGjOxHeLYBQfw3g__-7xpye_/view?usp=drive_link) |
 | 4-FPGA_withDelay_RSA | RSA       | hardware       | SAKURA-G   | 10            | [link](https://drive.google.com/file/d/1LVXnNnmmEZNZTtQc5pRrwZSVCsdwhn37/view?usp=drive_link) |
 | 5-F429_RSA.h5        | RSA       | software       | STM32F429  | 10            | [link](https://drive.google.com/file/d/1JJ_kOA5KVfE1O9yI09eP-j9MxdNxABAH/view?usp=drive_link) |
