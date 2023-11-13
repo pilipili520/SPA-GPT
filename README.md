@@ -74,9 +74,3 @@ $$
 | 5    |      F429_RSA      | Originally 1535 operations, now 1533, truncated the first two | Resampled at 1000000Hz and low-pass filtered at 5, moving average 100 |    25M/s    |
 | 6    |    AT89S52_ECC     | Originally  192 operations, now 188, truncated the first four | Resampled at 1000000Hz and low-pass filtered at 50           |   125M/s    |
 
-
-
-
-
-## Copyright and license
-
