@@ -2,7 +2,8 @@
 
 This database offers traces that complement the paper titled "SPA-GPT: General Pulse Tailor for Simple Power
 Analysis Based on Reinforcement Learning" . The database includes five traces (software/hardware/software-hardware co-design) of RSA and
-one trace of ECC. The trace of Kyber can be found in [link]([https://drive.google.com/file/d/1OsDaXpcQ7VVsuLL5z4eAcujq6uANXbRA/view?usp=sharing](https://ieeexplore.ieee.org/abstract/document/9591340)
+one trace of ECC. The trace of Kyber can be found in [link](https://drive.google.com/file/d/1OsDaXpcQ7VVsuLL5z4eAcujq6uANXbRA/view?usp=sharing](https://ieeexplore.ieee.org/abstract/document/9591340)
+
 **Files📃 Description:**
 
 **①.h5**📃 files are traces and parameters files. For information on how to handle .h5 files, please refer to the following link (We also provide some sample programs in this repository)：
