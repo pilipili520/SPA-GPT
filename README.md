@@ -1,8 +1,8 @@
 ## About
 
 This database offers traces that complement the paper titled "SPA-GPT: General Pulse Tailor for Simple Power
-Analysis Based on Reinforcement Learning" . The database includes five implementations (software/hardware/software-hardware co-design) of RSA and
-one implementations of ECC.
+Analysis Based on Reinforcement Learning" . The database includes five traces (software/hardware/software-hardware co-design) of RSA and
+one trace of ECC.
 
 **Files📃 Description:**
 
