@@ -13,10 +13,11 @@ one trace of ECC. The trace of Kyber can be found in [link](https://ieeexplore.i
 - matlab for .h5 files：https://www.mathworks.com/help/matlab/ref/h5read.html
 
 🔔click the **link** to get the data🔔 
+
 | files                | Algorithm | Implementation | Device     | Trace numbers | Download                                                     |
 | -------------------- | --------- | -------------- | ---------- | ------------- | ------------------------------------------------------------ |
 | 1-smart_card_RSA.h5  | RSA       | co-design      | smart card | 10            | [link](https://drive.google.com/file/d/1OsDaXpcQ7VVsuLL5z4eAcujq6uANXbRA/view?usp=sharing) |
-| 2-ASICX_RSA.h5       | RSA       | hardware        | ASIC X     | 100           | [link](https://drive.google.com/file/d/1pnWINMGel-jt2wvAbLAFCNGB68N9Eq3L/view?usp=drive_link) |
+| 2-ASICX_RSA.h5       | RSA       | hardware       | ASIC X     | 100           | [link](https://drive.google.com/file/d/1pnWINMGel-jt2wvAbLAFCNGB68N9Eq3L/view?usp=drive_link) |
 | 3-FPGA_noDelay_RSA   | RSA       | hardware       | SAKURA-G   | 1             | [link](https://drive.google.com/file/d/10b3yC6SVrGjOxHeLYBQfw3g__-7xpye_/view?usp=drive_link) |
 | 4-FPGA_withDelay_RSA | RSA       | hardware       | SAKURA-G   | 10            | [link](https://drive.google.com/file/d/1LVXnNnmmEZNZTtQc5pRrwZSVCsdwhn37/view?usp=drive_link) |
 | 5-F429_RSA.h5        | RSA       | software       | STM32F429  | 10            | [link](https://drive.google.com/file/d/1JJ_kOA5KVfE1O9yI09eP-j9MxdNxABAH/view?usp=drive_link) |
@@ -44,9 +45,33 @@ Explanation for each group:
 
 `traces`: It stores trace data. In this example, `CARD_RSA_for_paper` contains trace used in the paper, while `CARD_RSA_original contains` original traces collected using an oscilloscope.
 
-**②readH5.py**📃 is a Python example program for reading .h5 files.
+**②readH5.py**📃 is a Python example program for reading .h5 files. To run this script, you need to install the `numpy`, `matplotlib`, and `h5py` libraries. If you don't have these libraries, execute the command `pip3 install numpy matplotlib h5py`.  After running the code, it will print the names of all available `.h5` files. Due to differences in the default sorting order, you might get an output like:
 
-**③readH5.m**📃 is a MATLAB example program for reading .h5 files.
+```
+Available H5 files:
+1: 6-AT89S52_ECC.h5
+2: 3-FPGA_noDelay_RSA.h5
+3: 2-ASICX_RSA.h5
+4: 1-smart_card_RSA.h5
+5: 4-FPGA_withDelay_RSA.h5
+6: 5-F429_RSA.h5
+======= (^o^) =========
+Enter the number of the file you want to plot (such as "1: 6-AT89S52_ECC.h5", input 1):
+```
+
+If you input `1`, the program will print all accessible contents of this `.h5` file, such as:
+
+```
+metadata/ciphertext
+metadata/key
+metadata/sampleRate(Mps)
+traces/8051_ECC_for_paper
+traces/8051_ECC_original
+```
+
+It will then plot the waveform images used in the paper.
+
+**③readH5.m**📃 is a MATLAB example program for reading .h5 files. Similar to how Python scripts are used ;). 
 
 **④HDFView.7z** 📃 is a desktop application for visualizing .h5 file. The version provided here is for Windows; simply double-click the .bat script file to open it. For Linux and other versions, as well as additional usage instructions, please visit [https://www.hdfgroup.org](https://www.hdfgroup.org/).
 
