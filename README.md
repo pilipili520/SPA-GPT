@@ -69,7 +69,7 @@ traces/8051_ECC_for_paper
 traces/8051_ECC_original
 ```
 
-It will then plot the waveform images used in the paper.
+It will then plot the trace used in the paper.
 
 **③readH5.m**📃 is a MATLAB example program for reading .h5 files. Similar to how Python scripts are used ;). 
 
