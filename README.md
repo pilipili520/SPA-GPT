@@ -92,8 +92,8 @@ $$
 | ---- | :----------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | :---------: |
 | 1    |   smart_card_RSA   | Originally 1562 operations (with an additional multiplication operation at the end), now 1561 operations,  truncated the first segment. | Resampled at 1000000Hz and low-pass filtered at 10           |   12.5M/s   |
 | 2    |     ASICX_RSA      | Originally 1536 operations, now 1535, truncated the first three, but only reduce one operation. | Resampled at 5000000Hz, low-pass filtered at 10 and Averaged every 10 traces into one. |    25M/s    |
-| 3    |  FPGA_noDelay_RSA  | Originally 1531 operations, now 1529, truncated the first three | low-pass filtered at 10                                      |    25M/s    |
-| 4    | FPGA_withDelay_RSA | Originally 1531 operations, now 1529, truncated the first three | low-pass filtered at 10                                      |    25M/s    |
+| 3    |  FPGA_noDelay_RSA  | Originally 1536 operations, now 1534, truncated the first two | low-pass filtered at 10                                      |    25M/s    |
+| 4    | FPGA_withDelay_RSA | Originally 1536 operations, now 1534, truncated the first two | low-pass filtered at 10                                      |    25M/s    |
 | 5    |      F429_RSA      | Originally 1535 operations, now 1533, truncated the first two | Resampled at 1000000Hz and low-pass filtered at 5, moving average 100 |    25M/s    |
 | 6    |    AT89S52_ECC     | Originally  192 operations, now 188, truncated the first four | Resampled at 1000000Hz and low-pass filtered at 50           |   125M/s    |
 
