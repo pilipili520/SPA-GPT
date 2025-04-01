@@ -98,5 +98,7 @@ $$
 | 6    |    AT89S52_ECC     | Originally  192 operations, now 188, truncated the first four | Resampled at 1000000Hz and low-pass filtered at 50           |   125M/s    |
 
 ---
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/33486415-6629-4be3-b367-5f6c1e8633fa" alt="futuristic_pixel_wave_with_moon">
+</p>
 
-![futuristic_pixel_wave_with_moon](https://github.com/user-attachments/assets/33486415-6629-4be3-b367-5f6c1e8633fa)
